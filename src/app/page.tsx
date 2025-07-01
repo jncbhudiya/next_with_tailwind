@@ -1,19 +1,24 @@
 import Image from "next/image";
-import Column from "./column/page";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="">
+      <li>  <Link href="/column">Column</Link></li>
+    
+      <li><Link href="/width">Width</Link></li>
 
-       <Link href="/column">Column</Link>
-      {/* <h1 className=" bg-indigo-600 text-green-900">Hello Next..</h1>
-      <button
-        className="border-purple-200 text-purple-600 border-2 border-black-900 border-dashed 
-                   bg-conic/decreasing   from-violet-700 via-lime-300 to-violet-700 h-16 w-40 flex items-center justify-center text-white hover:bg-purple-600  hover:text-white active:bg-purple-700 ..."
-      >
-        Message
-      </button> */}
+      <li><Link href="/fontsize">Font Size</Link></li>
+
+      <li><Link href="/fontweight">Font Weight</Link></li>
+
+      <li><Link href="/font-stretch">Font Stretch</Link></li>
+
+      <li><Link href="/font-variant-number">Font Variant Number</Link></li>
+    
+      <li><Link href="/line-clamp">Line Clamp</Link></li>
+      
+      <li><Link href="/list-style-image">List Style Image</Link></li>
     </div>
   );
 }
