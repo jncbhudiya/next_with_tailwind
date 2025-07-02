@@ -4,7 +4,7 @@ function Liststyleimage() {
   return (
     <div>
       List Style Image
-      <ul className="">
+      <ul className=""> 
         <li>5 cups chopped Porcini mushrooms</li>
       </ul>
     </div>
