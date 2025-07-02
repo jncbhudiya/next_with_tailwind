@@ -3,56 +3,43 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="align-middle flex flex-col items-right h-screen ">
-      <li className="text-rose-900">
-        <Link href="/column">Column</Link>
-      </li>
-
-      <li className="text-rose-900">
-        <Link href="/width">Width</Link>
-      </li>
-
-      <li className="text-rose-900">
-        <Link href="/fontsize">Font Size</Link>
-      </li>
-
-      <li className="text-rose-900">
-        <Link href="/fontweight">Font Weight</Link>
-      </li>
-
-      <li className="text-rose-900">
-        <Link href="/font-stretch">Font Stretch</Link>
-      </li>
-
-      <li className="text-rose-900">
-        <Link href="/font-variant-number">Font Variant Number</Link>
-      </li>
-
-      <li className="text-rose-900">
-        <Link href="/line-clamp">Line Clamp</Link>
-      </li>
-      <li className="text-rose-900">
-        <Link href="/text-overflow">Text Overflow</Link>
-      </li>
-      <li className="text-rose-900">
-        <Link href="/list-style-image">List Style Image</Link>
-      </li>
-
-      <li className="text-rose-900">
-        <Link href="/list-style-type">List Style Type</Link>
-      </li>
-
-      <li className="text-rose-900">
-        <Link href="/flex-box-and-grid">Flexbox and Grid</Link>
-      </li>
-
-      <li className="text-rose-900">
-        <Link href="/border">Border</Link>
-      </li>
-
-      <li className="text-rose-900">
-        <Link href="/layout-class">Layout Class</Link>
-      </li>
-    </div>
+     <div className="min-h-screen bg-gradient-to-br from-purple-100 to-indigo-100 flex items-center justify-center p-6">
+          <div className="bg-white rounded-xl shadow-lg w-full max-w-md p-8  h-150 overflow-y-auto">
+            <h1 className="text-3xl font-bold text-purple-900 mb-6 text-center">
+              Explore Tailwind CSS Features
+            </h1>
+            <ul className="space-y-4">
+              {[
+                { href: "/column", label: "Column" },
+                { href: "/width", label: "Width" },
+                { href: "/fontsize", label: "Font Size" },
+                { href: "/fontweight", label: "Font Weight" },
+                { href: "/font-stretch", label: "Font Stretch" },
+                { href: "/font-variant-number", label: "Font Variant Number" },
+                { href: "/line-clamp", label: "Line Clamp" },
+                { href: "/text-overflow", label: "Text Overflow" },
+                { href: "/list-style-image", label: "List Style Image" },
+                { href: "/list-style-type", label: "List Style Type" },
+                { href: "/flex-box-and-grid", label: "Flexbox and Grid" },
+                { href: "/border", label: "Border" },
+                { href: "/layout-class", label: "Layout Class" },
+                { href: "/effects", label: "Effects" },
+                { href: "/filter", label: "Filter" },
+                { href: "/table", label: "Table" },
+                { href: "/transitions-animation", label: "Transitions & Animation" },
+                { href: "/interactivity", label: "Interactivity" },
+              ].map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="block text-purple-700 text-lg font-medium rounded-md px-4 py-3 transition-colors duration-300 hover:bg-purple-200 hover:text-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-400"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
   );
 }

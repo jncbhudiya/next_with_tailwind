@@ -90,7 +90,7 @@ function Layout() {
         <h2>*********************Inline Flex************************</h2>
         <div className="p-4 w-70">
           <p>
-            Today I spent most of the day researching ways to 
+            Today I spent most of the day researching ways to
             <span className="inline-flex items-baseline">
               <img
                 className="w-5 h-5 rounded-full "
@@ -98,7 +98,7 @@ function Layout() {
               />
               <span>Kramer</span>
             </span>
-            keeps telling me there is no way to make it work, that 
+            keeps telling me there is no way to make it work, that
           </p>
         </div>
 
@@ -124,10 +124,10 @@ function Layout() {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZPjasn-8EECz9w5rcUPPbKc1Zm77HFjqHlg&s"
           />
           <p className="text-justify">
-            Maybe we can live without libraries, people like you and me. 
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-            labore maiores error molestias dolorem perspiciatis nemo. Voluptate
-            quo sequi nihil excepturi alias similique mollitia iusto laudantium,
+            Maybe we can live without libraries, people like you and me. Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit. Totam labore
+            maiores error molestias dolorem perspiciatis nemo. Voluptate quo
+            sequi nihil excepturi alias similique mollitia iusto laudantium,
             quos, est non commodi? Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Sunt culpa unde fugiat dicta impedit recusandae,
             possimus rerum iure expedita deleniti ipsum dolorum! Illum, quis
@@ -153,7 +153,7 @@ function Layout() {
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZPjasn-8EECz9w5rcUPPbKc1Zm77HFjqHlg&s"
         />
         <p className="text-justify">
-          Maybe we can live without libraries, people like you and me.  Lorem
+          Maybe we can live without libraries, people like you and me. Lorem
           ipsum dolor sit, amet consectetur adipisicing elit. Totam labore
           maiores error molestias dolorem perspiciatis nemo. Voluptate quo sequi
           nihil excepturi alias similique mollitia iusto laudantium, quos, est
@@ -288,25 +288,70 @@ function Layout() {
           <div className="absolute inset-x-0 top-0 h-16 bg-yellow-200 ">02</div>
         </div>
         <div className="relative size-25 bg-amber-400 mt-4 ">
-          <div className="absolute top-0 right-0 size-16 bg-yellow-200 ">03</div>
+          <div className="absolute top-0 right-0 size-16 bg-yellow-200 ">
+            03
+          </div>
         </div>
         <div className="relative size-25 bg-lime-300 mt-4 ">
-          <div className="absolute inset-y-0 left-0 w-16 bg-yellow-200 ">04</div>
+          <div className="absolute inset-y-0 left-0 w-16 bg-yellow-200 ">
+            04
+          </div>
         </div>
         <div className="relative size-25 bg-blue-200 mt-4 ">
           <div className="absolute inset-0  w-16 bg-yellow-200 ">05</div>
         </div>
         <div className="relative size-25 bg-purple-200 mt-4 ">
-          <div className="absolute inset-y-0 right-0 w-16 bg-yellow-200 ">06</div>
+          <div className="absolute inset-y-0 right-0 w-16 bg-yellow-200 ">
+            06
+          </div>
         </div>
         <div className="relative size-25 bg-amber-400 mt-4 ">
-          <div className="absolute bottom-0 left-0 size-16 bg-yellow-200 ">07</div>
+          <div className="absolute bottom-0 left-0 size-16 bg-yellow-200 ">
+            07
+          </div>
         </div>
         <div className="relative size-25 bg-lime-300 mt-4 ">
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-yellow-200 ">08</div>
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-yellow-200 ">
+            08
+          </div>
         </div>
         <div className="relative size-25 bg-sky-500 mt-4 ">
-          <div className="absolute right-0 bottom-0 size-16 bg-yellow-200 ">09</div>
+          <div className="absolute right-0 bottom-0 size-16 bg-yellow-200 ">
+            09
+          </div>
+        </div>
+
+        <p className="sr-only">Using negative values</p>
+
+        <div className="relative size-20   bg-purple-200 mt-8 ">
+          <div className="absolute -top-4 -left-4 size-10 bg-yellow-200 ">
+            01
+          </div>
+        </div>
+
+        <h1>-------visibility-------</h1>
+        <div className="grid grid-cols-3 gap-4 bg-sky-200 p-4">
+          <div className="bg-lime-200">01</div>
+          <div className="bg-lime-300 invisible">02</div>
+          <div className="bg-lime-200">03</div>
+        </div>
+
+        <div className="relative h-40 w-40">
+          <div className="absolute z-40 bg-lime-300 w-20 h-20 top-0 left-0">
+            05
+          </div>
+          <div className="absolute z-30 bg-lime-400 w-20 h-20 top-4 left-4">
+            04
+          </div>
+          <div className="absolute z-50 bg-lime-500 w-20 h-20 top-8 left-8">
+            03
+          </div>
+          <div className="absolute z-10 bg-lime-600 w-20 h-20 top-12 left-12">
+            02
+          </div>
+          <div className="absolute z-0 bg-lime-700 w-20 h-20 top-16 left-16">
+            01
+          </div>
         </div>
       </div>
     </div>
